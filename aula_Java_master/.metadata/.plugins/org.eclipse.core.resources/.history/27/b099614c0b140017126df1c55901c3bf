@@ -1,0 +1,45 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args)
+	{	
+		
+		
+		List<Aluno> lista = CriaLista();
+		
+		for(Aluno a : lista)
+		{
+			
+		}
+		
+	}
+	
+	
+	public static List<Aluno> CriaLista()
+	{
+		List<Aluno> listA = new ArrayList<Aluno>();
+		System.out.println("Quantos alunos?");		
+		Scanner terminalInput = new Scanner(System.in);
+		int n = terminalInput.nextInt();
+		
+		for(int cont = 0; cont < n; cont++)
+		{
+			System.out.println("Aluno " + cont);	
+			System.out.println("Digite o nome:");	
+			String nome = terminalInput.nextLine();
+			String cpf = terminalInput.nextLine();
+			int rm = terminalInput.nextInt();
+			
+			listA.add(new AlunoBuilder().setNome(nome)
+										.setCpf(cpf)
+										.setRm(rm)
+										.Build());
+		}
+		
+		return listA;
+	}
+
+}

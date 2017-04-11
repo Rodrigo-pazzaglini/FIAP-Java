@@ -1,0 +1,26 @@
+
+public class Aluno 
+{
+	private String nome;
+	private String cpf;
+	private int rm;
+
+	public Aluno(String _nome, String _cpf, int _rm)
+	{
+		nome = _nome;
+		cpf = _cpf;
+		rm = _rm;
+	}
+	
+	
+	public String getNome() {
+		return nome;
+	}
+	public String getCpf() {
+		return cpf;
+	}
+	public int getRm() {
+		return rm;
+	}
+	
+}
