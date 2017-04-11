@@ -5,6 +5,32 @@ public class Produto {
 	private double valor;
 	private String descricao;
 	private Fornecedor fabricante;
+	
+	public String atualizar (double p){
+		valor = valor + valor * (p/100);
+		return "Valor Atualizado";
+	}
+	
+	public double getDesconto(){
+		return this.valor * 0.9;
+	}
+	
+	public void setBasico(String x, double y){
+		descricao=x;
+		valor=y;
+	}
+	
+	public String getBasico(){
+		return "Descrição:" + descricao + "\n" + "Valor:" + valor;
+	}
+	
+	public Produto(int c, double v, String d){
+		codigo=c;
+		valor=v;
+		descricao=d;
+		fabricante=new Fornecedor();
+	}
+	
 	public String getAll(){
 		return codigo + "\n" +
 				valor + "\n" + 
