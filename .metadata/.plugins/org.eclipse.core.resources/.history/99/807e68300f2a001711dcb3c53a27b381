@@ -1,0 +1,30 @@
+package beans;
+
+public class CD extends Produto{
+	private int totalFaixas;
+	private String artista;
+	private String gravadora;
+	
+	
+	public int getTotalFaixas() {
+		return totalFaixas;
+	}
+	public void setTotalFaixas(int totalFaixas) {
+		this.totalFaixas = totalFaixas;
+	}
+	public String getArtista() {
+		return artista;
+	}
+	public void setArtista(String artista) {
+		this.artista = artista;
+	}
+	public String getGravadora() {
+		return gravadora;
+	}
+	public void setGravadora(String gravadora) {
+		this.gravadora = gravadora;
+	}
+	
+	
+	
+}
